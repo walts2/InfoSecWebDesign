@@ -1,0 +1,115 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Added fallback font */
+    line-height: 1.6;
+    background-color: whitesmoke;
+}
+
+header {
+    position: static;
+    top: 0;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    box-shadow: none; 
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+    font-size: 16px;
+    padding: 10px 20px; /* Larger padding for touch */
+    border-radius: 8px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: darkblue;
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+a:focus {
+    outline: 2px dashed navy;
+    outline-offset: 2px;
+    transition: outline-offset 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: whitesmoke;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Styles in Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
